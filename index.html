@@ -3,23 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Des3rt Scripts Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Des3rt Scripts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Des3rt Scripts</h1>
+        <h1 class="main-title">Des3rt Scripts</h1>
 
-        <button class="copy-btn" id="script-btn">📜 COPY DES3RT SCRIPT</button>
-        <button class="link-btn" id="tutorial-link">🎥 WATCH TUTORIAL</button>
-        <button class="link-btn" id="executor-link">💻 DOWNLOAD EXECUTOR</button>
+        <div class="section">
+            <h2 class="section-title">ADOPT ME PET SPAWNER SCRIPT</h2>
+            <img src="https://via.placeholder.com/600x300?text=SCRIPT+PREVIEW" alt="Script Preview" class="section-image">
+            <div class="copy-box" onclick="copyScript('script1')">
+                loadstring(game:HttpGet('https://pastefy.app/xcqWH4xT/raw'))()
+            </div>
+            <div class="links">
+                <a href="https://youtube.com/ВАШ_ССЫЛКА_НА_ВИДЕО" class="video-link" target="_blank">🎥 Video Tutorial</a>
+                <a href="https://delta-executor.com/" class="executor-link" target="_blank">💻 Executor Download</a>
+            </div>
+        </div>
 
-        <p class="note">
-            ✅ For <strong>Roblox</strong> | Works on <strong>Mobile & PC</strong>
-        </p>
+        <!-- Секция 2 -->
+        <div class="section">
+            <h2 class="section-title">ADOPT ME AUTOFARM SCRIPT</h2>
+            <img src="https://via.placeholder.com/600x300?text=SCRIPT+PREVIEW" alt="Script Preview" class="section-image">
+            <div class="copy-box" onclick="copyScript('script2')">
+                loadstring(game:HttpGet("ВАШ_ССЫЛКА_НА_СКРИПТ_2"))()
+            </div>
+            <div class="links">
+                <a href="https://youtube.com/ВАШ_ССЫЛКА_НА_ВИДЕО" class="video-link" target="_blank">🎥 Video Tutorial</a>
+                <a href="https://delta-executor.com/" class="executor-link" target="_blank">💻 Executor Download</a>
+            </div>
+        </div>
+
+        <!-- Секция 3 -->
+        <div class="section">
+            <h2 class="section-title">MM2 KNIFE SPAWNER SCIPT</h2>
+            <img src="https://via.placeholder.com/600x300?text=SCRIPT+PREVIEW" alt="Script Preview" class="section-image">
+            <div class="copy-box" onclick="copyScript('script3')">
+                loadstring(game:HttpGet("ВАШ_ССЫЛКА_НА_СКРИПТ_3"))()
+            </div>
+            <div class="links">
+                <a href="https://youtube.com/ВАШ_ССЫЛКА_НА_ВИДЕО" class="video-link" target="_blank">🎥 Video Tutorial</a>
+                <a href="https://delta-executor.com/" class="executor-link" target="_blank">💻 Executor Download</a>
+            </div>
+        </div>
+
+        <!-- Секция 4 -->
+        <div class="section">
+            <h2 class="section-title">MM2 AIMHACK SCRIPT</h2>
+            <img src="https://via.placeholder.com/600x300?text=SCRIPT+PREVIEW" alt="Script Preview" class="section-image">
+            <div class="copy-box" onclick="copyScript('script4')">
+                loadstring(game:HttpGet("ВАШ_ССЫЛКА_НА_СКРИПТ_4"))()
+            </div>
+            <div class="links">
+                <a href="https://youtube.com/ВАШ_ССЫЛКА_НА_ВИДЕО" class="video-link" target="_blank">🎥 Video Tutorial</a>
+                <a href="https://executor.example.com" class="executor-link" target="_blank">💻 Executor Download</a>
+            </div>
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
