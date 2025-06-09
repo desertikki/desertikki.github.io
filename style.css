@@ -1,0 +1,60 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #121212;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.1);
+}
+
+h1 {
+    color: #e67e22;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-btn {
+    background: #e67e22;
+    color: white;
+}
+
+.copy-btn:hover {
+    background: #d35400;
+}
+
+.link-btn {
+    background: #3498db;
+    color: white;
+}
+
+.link-btn:hover {
+    background: #2980b9;
+}
+
+.note {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-top: 20px;
+}
