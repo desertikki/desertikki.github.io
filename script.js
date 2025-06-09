@@ -1,9 +1,9 @@
 // Массивы с данными для каждого скрипта
 const scripts = [
-    "loadstring(game:HttpGet('ваш скрипт 1'))()",
-    "loadstring(game:HttpGet('ваш скрипт 2'))()",
-    "loadstring(game:HttpGet('ваш скрипт 3'))()",
-    "loadstring(game:HttpGet('ваш скрипт 4'))()"
+    "loadstring(game:HttpGet('https://pastefy.app/xcqWH4xT/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/onW9UNCd/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/dBD02P8G/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/fiMsYnNo/raw'))()"
 ];
 
 const videoLinks = [
@@ -14,10 +14,10 @@ const videoLinks = [
 ];
 
 const executorLinks = [
-    "https://example.com/executor1",
-    "https://example.com/executor2",
-    "https://example.com/executor3",
-    "https://example.com/executor4"
+    "https://delta-executor.com",
+    "https://delta-executor.com",
+    "https://delta-executor.com",
+    "https://delta-executor.com"
 ];
 
 // Функция для копирования скрипта
