@@ -1,16 +1,22 @@
-document.getElementById("script-btn").addEventListener("click", () => {
-    const script = 'loadstring(game:HttpGet("https://pastebin.com/raw/EXAMPLE"))()';
-    navigator.clipboard.writeText(script)
-        .then(() => alert("✅ Script copied to clipboard!"))
-        .catch(() => prompt("❌ Copy manually:", script));
-});
-
-// Кнопка-ссылка на YouTube
-document.getElementById("tutorial-link").addEventListener("click", () => {
-    window.open("https://youtube.com", "_blank"); // Замените на свой URL
-});
-
-// Кнопка-ссылка на исполнитель
-document.getElementById("executor-link").addEventListener("click", () => {
-    window.open("https://delta-executor.com", "_blank"); // Замените на свой URL
+function copyScript(elementClass) {
+    const text = document.querySelector('.' + elementClass).innerText;
+    navigator.clipboard.writeText(text.trim())
+        .then(() => {
+            alert('✅ Script copied to clipboard!');
+        })
+        .catch(() => {
+            const textarea = document.createElement('textarea');
+            textarea.value = text.trim();
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            prompt('❌ Copy manually:', text.trim());
+        });
+}
+document.querySelectorAll('.copy-box').forEach((box, index) => {
+    box.classList.add('script' + (index + 1));
+    box.onclick = function() {
+        copyScript('script' + (index + 1));
+    };
 });
