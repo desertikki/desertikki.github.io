@@ -1,9 +1,9 @@
 // Массивы с данными для каждого скрипта
 const scripts = [
-    "loadstring(game:HttpGet('https://pastefy.app/xcqWH4xT/raw'))()",
-    "loadstring(game:HttpGet('https://pastefy.app/onW9UNCd/raw'))()",
-    "loadstring(game:HttpGet('https://pastefy.app/dBD02P8G/raw'))()",
-    "loadstring(game:HttpGet('https://pastefy.app/fiMsYnNo/raw'))()"
+    "loadstring(game:HttpGet('https://pastefy.app/9sle0xpH/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/1KD4gpFw/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/GPkwHYN0/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/mdyPKUix/raw'))()"
 ];
 
 const videoLinks = [
