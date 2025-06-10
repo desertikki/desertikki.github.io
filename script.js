@@ -1,16 +1,15 @@
-// Массивы с данными для каждого скрипта
 const scripts = [
-    "loadstring(game:HttpGet('https://pastefy.app/9sle0xpH/raw'))()",
-    "loadstring(game:HttpGet('https://pastefy.app/1KD4gpFw/raw'))()",
-    "loadstring(game:HttpGet('https://pastefy.app/GPkwHYN0/raw'))()",
-    "loadstring(game:HttpGet('https://pastefy.app/mdyPKUix/raw'))()"
+    "loadstring(game:HttpGet('https://pastefy.app/l2wiA0Xt/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/bpL7DTA2/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/u3bu02iq/raw'))()",
+    "loadstring(game:HttpGet('https://pastefy.app/65b8l49h/raw'))()"
 ];
 
 const videoLinks = [
-    "https://youtube.com/ваше видео 1",
-    "https://youtube.com/ваше видео 2",
-    "https://youtube.com/ваше видео 3",
-    "https://youtube.com/ваше видео 4"
+    "https://www.youtube.com/watch?v=NZ0f78iOr-g&t=4s&ab_channel=desert",
+    "https://www.youtube.com/watch?v=NZ0f78iOr-g&t=4s&ab_channel=desert",
+    "https://www.youtube.com/watch?v=NZ0f78iOr-g&t=4s&ab_channel=desert",
+    "https://www.youtube.com/watch?v=NZ0f78iOr-g&t=4s&ab_channel=desert"
 ];
 
 const executorLinks = [
@@ -20,7 +19,6 @@ const executorLinks = [
     "https://delta-executor.com"
 ];
 
-// Функция для копирования скрипта
 function copyScript(index) {
     const script = scripts[index - 1];
     navigator.clipboard.writeText(script)
@@ -28,12 +26,10 @@ function copyScript(index) {
         .catch(() => prompt("❌ Copy manually:", script));
 }
 
-// Функция для открытия видео
 function openVideo(index) {
     window.open(videoLinks[index - 1], "_blank");
 }
 
-// Функция для открытия ссылки на исполнитель
 function openExecutor(index) {
     window.open(executorLinks[index - 1], "_blank");
 }
