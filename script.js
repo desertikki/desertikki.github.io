@@ -1,6 +1,6 @@
 const scripts = [
-    "loadstring(game:HttpGet('https://raw.githubusercontent.com/desertikki/1/main/script1.lua'))()",
-    "loadstring(game:HttpGet('https://raw.githubusercontent.com/desertikki/1/main/script2.lua'))()",
+    "loadstring(game:HttpGet('https://raw.githubusercontent.com/desertikki/1/refs/heads/main/2'))()",
+    "loadstring(game:HttpGet('https://raw.githubusercontent.com/desertikki/1/refs/heads/main/2'))()",
     "loadstring(game:HttpGet('https://pastefy.app/u3bu02iq/raw'))()",
     "loadstring(game:HttpGet('https://pastefy.app/65b8l49h/raw'))()"
 ];
