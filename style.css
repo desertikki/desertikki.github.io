@@ -8,120 +8,77 @@
 body {
     background-color: #121212;
     color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
-.header {
+.container {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 20px 0;
+    max-width: 600px;
+    width: 100%;
 }
 
-.header h1 {
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+h1 {
+    font-size: 36px;
     color: #e67e22;
+    margin-bottom: 30px;
 }
 
-.sections-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
-.section {
+.card {
     background-color: #1e1e1e;
     border-radius: 12px;
-    padding: 24px;
-    width: 100%;
-    max-width: 704px;
-    height: 672px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #f39c12;
-}
-
-.image-link {
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 100%;
-    max-height: 400px;
-}
-
-.image-link img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-
-.image-link:hover img {
-    transform: scale(1.03);
-}
-
-button {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .copy-btn {
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
     background-color: #e67e22;
     color: white;
+    transition: background-color 0.3s;
 }
 
 .copy-btn:hover {
     background-color: #d35400;
 }
 
-.video-btn {
+.video-link {
+    display: block;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.video-link:hover {
+    transform: scale(1.02);
+}
+
+.video-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-link span {
+    display: block;
     background-color: #3498db;
     color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.video-btn:hover {
+.video-link:hover span {
     background-color: #2980b9;
-}
-
-.executor-btn {
-    background-color: #2ecc71;
-    color: white;
-}
-
-.executor-btn:hover {
-    background-color: #27ae60;
-}
-
-@media (max-width: 1200px) {
-    .sections-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .section {
-        max-width: 100%;
-        height: auto;
-        padding: 20px;
-    }
 }
