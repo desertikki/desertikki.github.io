@@ -19,6 +19,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding-top: 80px;
+    gap: 20px;
 }
 
 .copy-btn {
@@ -31,22 +32,25 @@ body {
     background-color: #2ecc71;
     color: white;
     transition: background-color 0.3s;
-    margin-bottom: 40px;
 }
 
 .copy-btn:hover {
     background-color: #27ae60;
 }
 
-.video-container {
-    width: 100%;
-    max-width: 700px;
-    aspect-ratio: 16 / 9;
-    border-radius: 12px;
-    overflow: hidden;
+.tutorial-btn {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.video-container iframe {
-    width: 100%;
-    height: 100%;
+.tutorial-btn:hover {
+    background-color: #c0392b;
 }
